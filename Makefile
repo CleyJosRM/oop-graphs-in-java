@@ -1,10 +1,8 @@
-all: Main.class
+all:
+	javac *.java
 
-Main.class: Main.java Grafo.java GrafoInterface.java GrafoListaAdjacencia.java GrafoMatrizAdjacencia.java GrafoPonderadoMatrizAdjacencia.java
-	javac Main.java Grafo.java GrafoInterface.java GrafoListaAdjacencia.java GrafoMatrizAdjacencia.java GrafoPonderadoMatrizAdjacencia.java
-
-run: all
+run:
 	java Main
 
 clean:
-	del /Q *.class
+	rm *.class
